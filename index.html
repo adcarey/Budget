@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<title>Budget</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="text-center">Budget Tool!</h1> 
+    <p class="text-center">This page is to help you understand where your money is going and how you are really spending it!</p> 
+  </div>
+  
+  <div class="row">
+  	<div class="col-xs-4"></div>
+  	<div class="col-xs-4">
+    	<label for="ex2">Monthly Income</label>
+    	<input class="form-control" id="income" type="number">
+    </div>
+  </div>
+
+  <div class="row">
+  	<div class="col-xs-4">
+    	<label for="ex2">Monthly Savings</label><br>
+    	<input class="form-control" id="savings" type="number">
+    </div>
+    
+    <div class="col-xs-4">
+    	<label for="ex2">Car Expenses(Gas, Car Payment, Maintenance)</label>
+    	<input class="form-control" id="car" type="number">
+	</div>
+	 
+	 <div class="col-xs-4">
+    	<label for="ex2">Food Expenses(Groceries, Eating Out)</label>
+    	<input class="form-control" id="food" type="number">
+	</div>
+  </div>
+
+  <div class="row">
+
+  	 <div class="col-xs-4">
+    	<label for="ex2">Housing Expenses(Rent, Mortgage)</label>
+    	<input class="form-control" id="housing" type="number">
+	</div>
+  	
+  	<div class="col-xs-4">
+    	<label for="ex2">Internet and Cable(Internet, Cable, Netflix)</label>
+    	<input class="form-control" id="cable" type="number">
+    </div>
+    
+    <div class="col-xs-4">
+    	<label for="ex2">Electric Bill</label>
+    	<input class="form-control" id="electric" type="number">
+	</div>
+	 
+  </div>
+
+  <div class="row">
+  	<div class="col-xs-4">
+    	<label for="ex2">Grooming(Barber, Nails, spa)</label>
+    	<input class="form-control" id="grooming" type="number">
+    </div>
+
+    <div class="col-xs-4">
+    	<label for="ex2">Water Bill</label>
+    	<input class="form-control" id="water" type="number">
+	</div>
+
+	 <div class="col-xs-4">
+    	<label for="ex2">Insurance(Homeowners, Renters, Car, Life)</label>
+    	<input class="form-control" id="insurance" type="number">
+	</div>
+ </div>
+
+   <div class="row">
+    <div class="col-xs-4">
+    	<label for="ex2">Entertainment(Date Nights, Movies, sporting events)</label>
+    	<input class="form-control" id="entertainment" type="number">
+	</div>
+	 
+	 <div class="col-xs-4">
+    	<label for="ex2">Animal Expenses(pet food, pet grooming, vet)</label>
+    	<input class="form-control" id="animals" type="number">
+	</div>
+
+	 <div class="col-xs-4">
+    	<label for="ex2">Miscellaneous</label>
+    	<input class="form-control" id="misc" type="number">
+	</div>
+
+  </div>
+  <div class="row">
+  	<div class="col-xs-4">
+  	</div>
+  	<div class="col-xs-2"><br>
+		<button type="button" class="btn btn-success go"><h2>Calculate!</h2></button>
+	</div>
+		<div class="col-xs-2"><br>
+		<button type="button" class="btn btn-danger" id="clear"><h2>Clear!</h2></button>
+	</div>
+	<div class="col-xs-4">
+	</div>
+  </div>
+
+  <div class="row">
+  	<div class="col-xs-2"></div>
+  		<div class="col-xs-4" >
+    	<h2 id="expenses">Total Expenses: </h2>
+    </div>
+
+  	<div class="col-xs-4" >
+    	<h2 id="remainder">Remainder: </h2>
+    </div>
+  </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="assets/function.js"></script>
+
+</body>
+</html>
